@@ -1,9 +1,15 @@
 <?php
-namespace Core;
 
-use Core\Kernel\Bootstrap;
+define('__FLOWER__', TRUE);
+define('__ROOT', realpath(dirname(__FILE__)) . DIRECTORY_SEPARATOR);
+define('__DIR', dirname(__FILE__));
 
-include_once("./Kernel/Bootstrap.php");
+require("Include/Define/_Loader.php");
+require("Include/Environment/_Loader.php");
 
-$Bootstrap = new Kernel\Bootstrap();
+require("Include/Autoload.php");
+require("Include/ResourceHandler.php");
+
+Core\ResourceHandler::Initialize();
+
 ?>
