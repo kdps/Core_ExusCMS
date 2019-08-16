@@ -3,16 +3,13 @@ namespace Core\Classes;
 
 use Core\ResourceHandler;
 
-class ModuleHandler
-{
+class ModuleHandler {
 
-	public static function Initialize()
-	{
+	public static function Initialize() {
 		$RequestMethodType = ResourceHandler::getRequestMethod();
 		$ModuleType = null;
 		
-		switch($RequestMethodType)
-		{
+		switch($RequestMethodType) {
 			case "GET":
 				$ModuleType = "Sender";
 				break;
@@ -32,7 +29,6 @@ class ModuleHandler
 			default:
 				break;
 		}
-		
 		
 	}
 	

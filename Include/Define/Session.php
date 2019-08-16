@@ -2,12 +2,9 @@
 
 if (!defined("__FLOWER__")) exit();
 
-if (session_status() == PHP_SESSION_NONE) 
-{
+if (session_status() == PHP_SESSION_NONE) {
 	ini_set('session.auto_start', 'Off');
-}
-else
-{
+} else {
 	ini_set('session.lazy_write', 'On');
 }
 

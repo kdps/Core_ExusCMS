@@ -62,8 +62,7 @@ class ResourceHandler {
 	 * @Return String
 	 */
 	
-	public static function getCookieVariable($Name)
-	{
+	public static function getCookieVariable( $Name ) {
 		if ( isset(self::$Instance->CookieObject[$Name]) ) {
 			return self::$Instance->CookieObject[$Name];
 		}

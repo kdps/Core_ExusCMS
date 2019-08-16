@@ -1,14 +1,12 @@
 <?php
 namespace Core\Classes;
 
-class ModuleProperty
-{
+class ModuleProperty {
 	
 	public $ModuleObject;
 	public $ModulePath;
 	
-	public static function setModuleObject( $ModuleObject )
-	{
+	public static function setModuleObject( $ModuleObject ) {
 		$this->ModuleObject = $ModuleObject;
 	}
 	
