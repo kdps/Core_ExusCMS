@@ -20,9 +20,9 @@ function Autoload( $className ) {
 			__ROOT . __CLASS_PATH . '/Request/' . $_CLASS . '.php',
 			__ROOT . __CLASS_PATH . '/Stream/' . $_CLASS . '.php',
 			__ROOT . __CLASS_PATH . '/Callback/' . $_CLASS . '.php',
-			__ROOT . __CLASS_PATH . '/ModuleHandler/' . $_CLASS . '.php',
-			__ROOT . __CLASS_PATH . '/ModuleInstance/' . $_CLASS . '.php',
-			__ROOT . __CLASS_PATH . '/SystemHandler/' . $_CLASS . '.php'
+			__ROOT . __CLASS_PATH . '/ModuleHandler/' . $_CLASS . '.class.php',
+			__ROOT . __CLASS_PATH . '/ModuleInstance/' . $_CLASS . '.class.php',
+			__ROOT . __CLASS_PATH . '/SystemHandler/' . $_CLASS . '.class.php'
 		);
 		
 		$GLOBALS['CLSARR_' . $_CLASS] = $_Include;

@@ -1,11 +1,9 @@
 <?php
 namespace Core\Classes;
 
-class Cookie
-{
+class Cookie {
 	
-	public static function getObject() 
-	{
+	public static function getObject() {
 		return $_COOKIE;
 	}
 	

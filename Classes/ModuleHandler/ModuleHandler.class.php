@@ -30,6 +30,7 @@ class ModuleHandler {
 				break;
 		}
 		
+		$RequestModule = ResourceHandler::getRequestVariable("Module", "");
 	}
 	
 }

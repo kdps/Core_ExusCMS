@@ -8,7 +8,7 @@ require("Include/Define/_Loader.php");
 require("Include/Environment/_Loader.php");
 
 require("Include/Autoload.php");
-require("Include/ResourceHandler.php");
+require("Include/ResourceHandler.class.php");
 
 Core\ResourceHandler::Initialize();
 
